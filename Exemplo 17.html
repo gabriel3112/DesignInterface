@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio - formulario</title>
+</head>
+<body>
+    <form action="" method="post">
+        <legend><strong>Formulário</strong></legend>
+        <fieldset>
+            <legend>Dados Pessoais</legend><br>
+            <div>
+                <label for="">Nome</label><br>
+                <input type="text" name="txtNome" id="txtNome" required>
+            </div>
+            <br>
+            <div>
+                <label for="">Endereço</label><br>
+                <input type="text" name="txtEndereco" id="txtEndereco" required>
+            </div>
+            <br>
+            <div>
+                <label for="">Cidade</label><br>
+                <input type="text" name="txtCidade" id="txtCidade" required>
+            </div>
+            <br>
+            <div>
+                <label for="">Estado</label><br>
+                <select name="cboEstado" id="cboEstado">
+                    <option value="1">SP</option>
+                    <option value="2">DF</option>
+                    <option value="3">RS</option>
+                    <option value="4">RJ</option>
+                    <option value="5">AM</option>
+                    <option value="6">PA</option>
+                </select>
+            </div>
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>Dados Profissionais</legend><br>
+            <div>
+                <label for="">Natureza do Cargo</label>
+                <input type="radio" name="rdNameCargo" id="rdCargo" value="1"> Gêrencia
+                <input type="radio" name="rdNameCargo" id="rdCargo" value="2"> Financeiro
+                <input type="radio" name="rdNameCargo" id="rdCargo" value="3"> Recepção
+                <input type="radio" name="rdNameCargo" id="rdCargo" value="4"> Administrativo
+                <input type="radio" name="rdNameCargo" id="rdCargo" value="5"> Juridico
+            </div>
+            <br>
+            <div>
+                <label for="">Areas de Interesse:</label><br>
+                <input type="checkbox" name="chkAreaInteresse" id="chkAreaInteresse" value="1"> Computação<br>
+                <input type="checkbox" name="chkAreaInteresse" id="chkAreaInteresse" value="2"> Biologia<br>
+                <input type="checkbox" name="chkAreaInteresse" id="chkAreaInteresse" value="3"> Meio Ambiente<br>
+                <input type="checkbox" name="chkAreaInteresse" id="chkAreaInteresse" value="4"> Engenharia <br>
+                <input type="checkbox" name="chkAreaInteresse" id="chkAreaInteresse" value="5"> Historia <br>
+            </div>
+            <br>
+            <div>
+                <label for="">Mini-Curriculo</label><br>
+                <textarea name="txtFaleMais" id="txtFaleMais" cols="30" rows="10"></textarea>
+            </div>
+            <br>
+            <div>
+                <button type="submit">Cadastrar</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
