@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 20 - HTML CSS</title>
+    <style>
+        body {
+            margin: 40px;
+            padding: 20px;
+        }
+
+        h1 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: deeppink;
+        }
+
+        .div1 {
+            border-left: solid red 6px;
+            border-radius: 15px;
+            margin: 25px;
+            padding: 10px;
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        }
+
+        .div2 {
+            border-left: solid blue 6px;
+            border-radius: 15px;
+            margin: 25px;
+            padding: 10px;
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        }
+        #div3 {
+            border-left: solid green 6px;
+            margin: 25px;
+            padding: 10px;
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        }
+        #paragrafo{
+            background-color: chartreuse;
+            font-size: 2rem;
+            font-weight: 800;
+            text-decoration: double;
+        }
+        #estiloButton{
+            background-color: deeppink;
+            color: aliceblue;
+            margin: 20px;
+            padding: 15px;
+            width: 150px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        input{
+            display: block;
+            width: 150px;
+        }
+        label{
+            font-weight: bold;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <h1><strong>Exemplo 20 - HTML CSS</strong></h1>
+        <h2>Visão Geral sobre CSS</h2>
+        <p>CSS é um acronimo para folhas de estilo em cascata. Essa tecnica visa personalizar, estilizar um documento
+            HTML. Para isso usamos regras CSS, que representa uma estrutura que define como os elementos selecionados
+            devem ser estilizados. Essa regra é composta pelas seguintes partes:</p>
+        <ul>
+            <li><strong>Seletor</strong> - Indica quais elementos serão afetados pelo estilo definido.</li>
+            <li><strong>Bloco de Declaração</strong> - É o bloco composto por propriedades e valores, esse bloco será
+                aplicado ao elemento HTML.</li>
+        </ul>
+    </div>
+    <div class="div2">
+        <h1>Tipos de seletores</h1>
+        <p>Em CSS seletores são padrões usados para selecionar e estilizar os elementos Html em uma pagina web. Eles
+            definem quais elementos receberão as regras de estilos que serão declaradas dentro das chaves. Possuimos
+            varios tipos de seletores, os principais são:</p>
+        <h2>Seletores de ID</h2>
+        <p id="paragrafo">O seletor de ID é aquele que aplica a regra CSS a um componente HTML que tenha um atributo ID no componente
+            HTML. Este Seletor de ID deve ser aplicado a um unico elemento HTML, haja vista que o ID deve ser único.
+            Este seletor tem prioridade sobre os demais seletores (de classe e de tipo).</p>
+        <p>Este seletor sempre começara com um "#", seguido pelo nome do seletor e suas propriedades e valores.</p>
+        <p>Neste exemplo usamos seletores de id, de classe e de tipo para estilizar o documento HTML.</p>
+    </div>
+    <div id="div3">
+        <h3>Exemplo de formulario usando seletores CSS de ID</h3>
+        <div>
+            <label for="">Nome</label>
+            <input type="text" name="txtNome" id="txtNome">
+        </div>
+        <div>
+            <label for="">Data de Nascimento</label>
+            <input type="date" name="txtDataNascimento" id="txtDataNascimento">
+        </div>
+        <div>
+            <label for="">Ano de Nascimento</label>
+            <input type="number" name="txtAnoNascimento" id="txtAnoNascimento">
+        </div>
+        <div>
+            <button type="submit" id="estiloButton">Enviar</button>
+        </div>
+    </div>
+</body>
+
+</html>
